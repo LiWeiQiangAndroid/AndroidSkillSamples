@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".restart.KillSelfService"
+            android:process=":restart"/>
+        <service android:name=".restart.RestartIntentService"
+            android:process=":restart"/>
     </application>
 
 </manifest>
